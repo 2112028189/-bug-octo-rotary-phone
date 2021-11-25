@@ -1,44 +1,44 @@
 #coding:gbk
 """
-µÚÒ»¸öĞ¡ÏîÄ¿£ºRock-paper-scissors-lizard-Spock
-×÷Õß£ºÍÁÄ¾3°àÑîÀ¤
-ÈÕÆÚ£º2021/11/25
+ç¬¬ä¸€ä¸ªå°é¡¹ç›®ï¼šRock-paper-scissors-lizard-Spock
+ä½œè€…ï¼šåœŸæœ¨3ç­æ¨å¤
+æ—¥æœŸï¼š2021/11/25
 """
 
 import random
 
 
 
-# 0 - Ê¯Í·
-# 1 - Ê·²¨¿Ë
-# 2 - Ö½
-# 3 - òáòæ
-# 4 - ¼ôµ¶
+# 0 - çŸ³å¤´
+# 1 - å²æ³¢å…‹
+# 2 - çº¸
+# 3 - èœ¥èœ´
+# 4 - å‰ªåˆ€
 
-# ÒÔÏÂÎªÍê³ÉÓÎÏ·ËùĞèÒªÓÃµ½µÄ×Ô¶¨Òåº¯Êı
-comp_number=random.randrange(5)#×Ô¶¯²úÉú0-4Ö®¼äµÄËæ»úÕûÊı
-def name_to_number(name):#½«ÓÃ»§µÄÓÎÏ·Ñ¡Ôñ¶ÔÏó×ª»»ÎªÏàÓ¦µÄÕûÊı
+# ä»¥ä¸‹ä¸ºå®Œæˆæ¸¸æˆæ‰€éœ€è¦ç”¨åˆ°çš„è‡ªå®šä¹‰å‡½æ•°
+comp_number=random.randrange(5)#è‡ªåŠ¨äº§ç”Ÿ0-4ä¹‹é—´çš„éšæœºæ•´æ•°
+def name_to_number(name):#å°†ç”¨æˆ·çš„æ¸¸æˆé€‰æ‹©å¯¹è±¡è½¬æ¢ä¸ºç›¸åº”çš„æ•´æ•°
     """
-    ½«ÓÎÏ·¶ÔÏó¶ÔÓ¦µ½²»Í¬µÄÕûÊı
+    å°†æ¸¸æˆå¯¹è±¡å¯¹åº”åˆ°ä¸åŒçš„æ•´æ•°
     """
 
-    # Ê¹ÓÃif/elif/elseÓï¾ä½«¸÷ÓÎÏ·¶ÔÏó¶ÔÓ¦µ½²»Í¬µÄÕûÊı
-    # ²»ÒªÍü¼Ç·µ»Ø½á¹û
+    # ä½¿ç”¨if/elif/elseè¯­å¥å°†å„æ¸¸æˆå¯¹è±¡å¯¹åº”åˆ°ä¸åŒçš„æ•´æ•°
+    # ä¸è¦å¿˜è®°è¿”å›ç»“æœ
 
 
-    if name==("Ê¯Í·"):
+    if name==("çŸ³å¤´"):
         number=0
         return number
-    if name==("Ê·²¨¿Ë"):
+    if name==("å²æ³¢å…‹"):
         number=1
         return number
-    if name==("Ö½"):
+    if name==("çº¸"):
         number=2
         return number
-    if name==("òáòæ"):
+    if name==("èœ¥èœ´"):
         number=3
         return number
-    if name==("¼ôµ¶"):
+    if name==("å‰ªåˆ€"):
         number=4
         return number
     else:
@@ -46,86 +46,86 @@ def name_to_number(name):#½«ÓÃ»§µÄÓÎÏ·Ñ¡Ôñ¶ÔÏó×ª»»ÎªÏàÓ¦µÄÕûÊı
         return number
 
 
-def number_to_name(number):#½«¼ÆËã»ú²úÉúµÄËæ»úÊı×ª»»Îª¶ÔÓ¦µÄÓÎÏ·¶ÔÏó
+def number_to_name(number):#å°†è®¡ç®—æœºäº§ç”Ÿçš„éšæœºæ•°è½¬æ¢ä¸ºå¯¹åº”çš„æ¸¸æˆå¯¹è±¡
     """
-    ½«ÕûÊı (0, 1, 2, 3, or 4)¶ÔÓ¦µ½ÓÎÏ·µÄ²»Í¬¶ÔÏó
+    å°†æ•´æ•° (0, 1, 2, 3, or 4)å¯¹åº”åˆ°æ¸¸æˆçš„ä¸åŒå¯¹è±¡
     """
 
-    # Ê¹ÓÃif/elif/elseÓï¾ä½«²»Í¬µÄÕûÊı¶ÔÓ¦µ½ÓÎÏ·µÄ²»Í¬¶ÔÏó
-    # ²»ÒªÍü¼Ç·µ»Ø½á¹û
+    # ä½¿ç”¨if/elif/elseè¯­å¥å°†ä¸åŒçš„æ•´æ•°å¯¹åº”åˆ°æ¸¸æˆçš„ä¸åŒå¯¹è±¡
+    # ä¸è¦å¿˜è®°è¿”å›ç»“æœ
 
     if number==(0):
-        name=str("Ê¯Í·")
+        name=str("çŸ³å¤´")
         return name
     if number==(1):
-        name=str("Ê·²¨¿Ë")
+        name=str("å²æ³¢å…‹")
         return name
     if number==(2):
-        name=str("Ö½")
+        name=str("çº¸")
         return name
     if number==(3):
-        name=str("òáòæ")
+        name=str("èœ¥èœ´")
         return name
     if number==(4):
-        name=str("¼ôµ¶")
+        name=str("å‰ªåˆ€")
         return name
 
 def rpsls(player_choice):
 
     """
-    ÓÃ»§Íæ¼ÒÈÎÒâ¸ø³öÒ»¸öÑ¡Ôñ£¬¸ù¾İRPSLSÓÎÏ·¹æÔò£¬ÔÚÆÁÄ»ÉÏÊä³ö¶ÔÓ¦µÄ½á¹û
+    ç”¨æˆ·ç©å®¶ä»»æ„ç»™å‡ºä¸€ä¸ªé€‰æ‹©ï¼Œæ ¹æ®RPSLSæ¸¸æˆè§„åˆ™ï¼Œåœ¨å±å¹•ä¸Šè¾“å‡ºå¯¹åº”çš„ç»“æœ
 
     """
 
 
-    # Êä³ö"-------- "½øĞĞ·Ö¸î
-    # ÏÔÊ¾ÓÃ»§ÊäÈëÌáÊ¾£¬ÓÃ»§Í¨¹ı¼üÅÌ½«×Ô¼ºµÄÓÎÏ·Ñ¡Ôñ¶ÔÏóÊäÈë£¬´æÈë±äÁ¿player_choice
+    # è¾“å‡º"-------- "è¿›è¡Œåˆ†å‰²
+    # æ˜¾ç¤ºç”¨æˆ·è¾“å…¥æç¤ºï¼Œç”¨æˆ·é€šè¿‡é”®ç›˜å°†è‡ªå·±çš„æ¸¸æˆé€‰æ‹©å¯¹è±¡è¾“å…¥ï¼Œå­˜å…¥å˜é‡player_choice
 
-    # µ÷ÓÃname_to_number()º¯Êı½«ÓÃ»§µÄÓÎÏ·Ñ¡Ôñ¶ÔÏó×ª»»ÎªÏàÓ¦µÄÕûÊı£¬´æÈë±äÁ¿player_choice_number
+    # è°ƒç”¨name_to_number()å‡½æ•°å°†ç”¨æˆ·çš„æ¸¸æˆé€‰æ‹©å¯¹è±¡è½¬æ¢ä¸ºç›¸åº”çš„æ•´æ•°ï¼Œå­˜å…¥å˜é‡player_choice_number
 
-    # ÀûÓÃrandom.randrange()×Ô¶¯²úÉú0-4Ö®¼äµÄËæ»úÕûÊı£¬×÷Îª¼ÆËã»úËæ»úÑ¡ÔñµÄÓÎÏ·¶ÔÏó£¬´æÈë±äÁ¿comp_number
+    # åˆ©ç”¨random.randrange()è‡ªåŠ¨äº§ç”Ÿ0-4ä¹‹é—´çš„éšæœºæ•´æ•°ï¼Œä½œä¸ºè®¡ç®—æœºéšæœºé€‰æ‹©çš„æ¸¸æˆå¯¹è±¡ï¼Œå­˜å…¥å˜é‡comp_number
 
-    # µ÷ÓÃnumber_to_name()º¯Êı½«¼ÆËã»ú²úÉúµÄËæ»úÊı×ª»»Îª¶ÔÓ¦µÄÓÎÏ·¶ÔÏó
+    # è°ƒç”¨number_to_name()å‡½æ•°å°†è®¡ç®—æœºäº§ç”Ÿçš„éšæœºæ•°è½¬æ¢ä¸ºå¯¹åº”çš„æ¸¸æˆå¯¹è±¡
 
-    # ÔÚÆÁÄ»ÉÏÏÔÊ¾¼ÆËã»úÑ¡ÔñµÄËæ»ú¶ÔÏó
+    # åœ¨å±å¹•ä¸Šæ˜¾ç¤ºè®¡ç®—æœºé€‰æ‹©çš„éšæœºå¯¹è±¡
 
-    # ÀûÓÃif/elif/else Óï¾ä£¬¸ù¾İRPSLS¹æÔò¶ÔÓÃ»§Ñ¡ÔñºÍ¼ÆËã»úÑ¡Ôñ½øĞĞÅĞ¶Ï£¬²¢ÔÚÆÁÄ»ÉÏÏÔÊ¾ÅĞ¶Ï½á¹û
+    # åˆ©ç”¨if/elif/else è¯­å¥ï¼Œæ ¹æ®RPSLSè§„åˆ™å¯¹ç”¨æˆ·é€‰æ‹©å’Œè®¡ç®—æœºé€‰æ‹©è¿›è¡Œåˆ¤æ–­ï¼Œå¹¶åœ¨å±å¹•ä¸Šæ˜¾ç¤ºåˆ¤æ–­ç»“æœ
 
-    # Èç¹ûÓÃ»§ºÍ¼ÆËã»úÑ¡ÔñÒ»Ñù£¬ÔòÏÔÊ¾¡°ÄúºÍ¼ÆËã»ú³öµÄÒ»ÑùÄØ¡±£¬Èç¹ûÓÃ»§»ñÊ¤£¬ÔòÏÔÊ¾¡°ÄúÓ®ÁË¡±£¬·´Ö®ÔòÏÔÊ¾¡°¼ÆËã»úÓ®ÁË¡±
+    # å¦‚æœç”¨æˆ·å’Œè®¡ç®—æœºé€‰æ‹©ä¸€æ ·ï¼Œåˆ™æ˜¾ç¤ºâ€œæ‚¨å’Œè®¡ç®—æœºå‡ºçš„ä¸€æ ·å‘¢â€ï¼Œå¦‚æœç”¨æˆ·è·èƒœï¼Œåˆ™æ˜¾ç¤ºâ€œæ‚¨èµ¢äº†â€ï¼Œåä¹‹åˆ™æ˜¾ç¤ºâ€œè®¡ç®—æœºèµ¢äº†â€
 
     if player_choice_number==(0) and (comp_number==(3) or comp_number==(4)):
-        print("ÄúÓ®ÁË")
+        print("æ‚¨èµ¢äº†")
     elif player_choice_number==(1) and (comp_number==(4) or comp_number==(0)):
-        print("ÄúÓ®ÁË")
+        print("æ‚¨èµ¢äº†")
     elif player_choice_number==(2) and (comp_number==(0) or comp_number==(1)):
-        print("ÄúÓ®ÁË")
-    elif player_choice_number==(3) and (comp_number==(1) or comp_number==(4)):
-        print("ÄúÓ®ÁË")
+        print("æ‚¨èµ¢äº†")
+    elif player_choice_number==(3) and (comp_number==(1) or comp_number==(2)):
+        print("æ‚¨èµ¢äº†")
     elif player_choice_number==(4) and (comp_number==(2) or comp_number==(3)):
-        print("ÄúÓ®ÁË")
+        print("æ‚¨èµ¢äº†")
     elif player_choice_number==(0) and comp_number==(0):
-        print("ÄúºÍ¼ÆËã»ú³öµÄÒ»ÑùÄØ")
+        print("æ‚¨å’Œè®¡ç®—æœºå‡ºçš„ä¸€æ ·å‘¢")
     elif player_choice_number==(1) and comp_number==(1):
-        print("ÄúºÍ¼ÆËã»ú³öµÄÒ»ÑùÄØ")
+        print("æ‚¨å’Œè®¡ç®—æœºå‡ºçš„ä¸€æ ·å‘¢")
     elif player_choice_number==(2) and comp_number==(2):
-        print("ÄúºÍ¼ÆËã»ú³öµÄÒ»ÑùÄØ")
+        print("æ‚¨å’Œè®¡ç®—æœºå‡ºçš„ä¸€æ ·å‘¢")
     elif player_choice_number==(3) and comp_number==(3):
-        print("ÄúºÍ¼ÆËã»ú³öµÄÒ»ÑùÄØ")
+        print("æ‚¨å’Œè®¡ç®—æœºå‡ºçš„ä¸€æ ·å‘¢")
     elif player_choice_number==(4) and comp_number==(4):
-        print("ÄúºÍ¼ÆËã»ú³öµÄÒ»ÑùÄØ")
+        print("æ‚¨å’Œè®¡ç®—æœºå‡ºçš„ä¸€æ ·å‘¢")
     elif player_choice_number==(5):
         print("Error: No Correct Name")
     else:
-        print("¼ÆËã»úÓ®ÁË")
+        print("è®¡ç®—æœºèµ¢äº†")
 
 
-print("»¶Ó­Ê¹ÓÃRPSLSÓÎÏ·")
+print("æ¬¢è¿ä½¿ç”¨RPSLSæ¸¸æˆ")
 print("----------------")
-print("ÇëÊäÈëÄãµÄÑ¡Ôñ:")
+print("è¯·è¾“å…¥ä½ çš„é€‰æ‹©:")
 player_choice=str(input())
 print("----------------")
-print("ÄúµÄÑ¡ÔñÎª:"+str(player_choice))
-print("¼ÆËã»úµÄÑ¡ÔñÎª£º"+str(number_to_name(comp_number)))
+print("æ‚¨çš„é€‰æ‹©ä¸º:"+str(player_choice))
+print("è®¡ç®—æœºçš„é€‰æ‹©ä¸ºï¼š"+str(number_to_name(comp_number)))
 player_choice_number=name_to_number(player_choice)
 rpsls(player_choice)
 
